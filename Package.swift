@@ -4,7 +4,8 @@ import PackageDescription
 let package = Package(
     name: "aura-sound",
     platforms: [
-        .macOS(.v14)
+        .macOS(.v14),
+        .iOS(.v17)
     ],
     products: [
         .library(

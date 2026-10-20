@@ -96,8 +96,13 @@ public struct MainView: View {
             }
         }
         .padding(.vertical, 16)
+        #if os(macOS)
         .frame(width: 360, height: 580)
         .background(Color(nsColor: .windowBackgroundColor))
+        #else
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color(uiColor: .systemBackground))
+        #endif
         .onAppear {
             syncFromEngine()
         }
@@ -157,7 +162,11 @@ public struct MainView: View {
                         .padding(.vertical, 6)
                         .background(
                             RoundedRectangle(cornerRadius: 8)
+                                #if os(iOS)
+                                .fill(Color(uiColor: .secondarySystemBackground))
+                                #else
                                 .fill(Color(nsColor: .controlBackgroundColor))
+                                #endif
                         )
                     }
                     .buttonStyle(.plain)

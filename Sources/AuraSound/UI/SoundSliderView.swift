@@ -49,7 +49,11 @@ public struct SoundSliderView: View {
         .padding(12)
         .background(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
+                #if os(iOS)
+                .fill(Color(uiColor: .secondarySystemBackground).opacity(0.6))
+                #else
                 .fill(Color(nsColor: .controlBackgroundColor).opacity(0.6))
+                #endif
         )
         .overlay(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
