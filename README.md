@@ -37,8 +37,8 @@ swift build -c release
 ---
 
 ## 📚 Documentation Pillars
-- [PRD.md](PRD.md) — Product specifications and acoustic requirements
-- [ARCHITECTURE.md](ARCHITECTURE.md) — DSP audio graph and pipeline taxonomy
+- [PRD.md](docs/PRD.md) — Product specifications and acoustic requirements
+- [ARCHITECTURE.md](docs/ARCHITECTURE.md) — DSP audio graph and pipeline taxonomy
 - [AGENTS.md](AGENTS.md) — Operational instructions for AI coding agents
-- [TESTING.md](TESTING.md) — Signal stability and filter test strategies
-- [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) — Visual tokens and midnight studio UI
+- [TESTING.md](docs/TESTING.md) — Signal stability and filter test strategies
+- [DESIGN_SYSTEM.md](docs/DESIGN_SYSTEM.md) — Visual tokens and midnight studio UI
